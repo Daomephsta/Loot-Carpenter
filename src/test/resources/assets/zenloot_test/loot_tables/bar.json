@@ -1,0 +1,21 @@
+{
+	"pools":
+	[
+		{
+			"name": "baz",
+			"conditions":
+			[
+				{"condition": "killed_by_player"}
+			],
+			"entries":
+			[
+				{
+					"type": "item",
+					"entryName": "qux",
+					"name": "minecraft:apple"
+				}
+			],
+			"rolls": 1
+		}
+	]
+}

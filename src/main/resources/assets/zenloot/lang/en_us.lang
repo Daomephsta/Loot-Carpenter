@@ -1,0 +1,32 @@
+#PARSE_ESCAPES
+zenloot.commands.dump.desc=§2/ct loottables [mode] <args>\n§3Dumps the specified loottable(s)\n§3to <game directory>/dumps
+zenloot.commands.dump.usage=Usage: ct loottables [mode] <args>\nModes: all | target | byName | list\nArgs: none | none | tableName | none
+zenloot.commands.dump.unknownSubcommand=Unknown subcommand %s
+zenloot.commands.dump.all.done=Dumped all loot tables into %s
+zenloot.commands.dump.all.exception=An unexpected error occured while dumping %s. Check the game log for details.
+zenloot.commands.missingName=Loot table name required!
+zenloot.commands.invalidName=Invalid loot table name!
+zenloot.commands.dump.target.noTable=The target does not have a loot table
+zenloot.commands.dump.target.noTarget=Nothing in range
+zenloot.commands.dump.target.senderNotEntity=This command can only be executed by entities
+zenloot.commands.dump.dumpLink=Dumped loot table %s to %s
+zenloot.commands.generate.type=Type not specified, specify chest or entity as additional argument
+zenloot.commands.generate.missingEntityId=An entity ID must be specified
+zenloot.commands.generate.invalidEntityId=No entity with ID %s exists
+
+zenloot.messages.error.invalidTableName=No loot table with name %s exists!
+zenloot.messages.error.invalidPoolName=No loot pool with name %s exists in table %s!
+zenloot.messages.error.invalidEntryName=No entry with name %s exists in pool %s
+zenloot.messages.error.unparseableFunctionType=%s is not an instance of IData or LootFunction!
+zenloot.messages.error.unparseableConditionType=%s is not an instance of IData or LootCondition!
+zenloot.messages.error.functionhelper.invalidEnchant=%s is not a valid enchantment id
+zenloot.messages.error.functionhelper.damageOver100=Items cannot receive more than 100% damage!
+
+zenloot.messages.info.locatingLootTables=All existing loot tables are being located. This may take a few seconds.
+
+zenloot.config.warnings.category=Warnings
+zenloot.config.warnings.deprecation=Deprecation
+zenloot.config.warnings.newTableMinecraftNamespace=newTable() Minecraft Namespace
+zenloot.config.workarounds.category=Workarounds
+zenloot.config.workarounds.forceInitClasses=Classes to force initialise
+zenloot.config.lastCfgVersion=Do not touch!

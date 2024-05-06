@@ -1,0 +1,28 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "daomephsta.zenloot.test.support.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": 
+	[
+		"condition.TestEntityHasPropertyAccessors",
+		"condition.TestEntityOnFireAccessors",
+		"condition.TestKilledByPlayerAccessors",
+		"condition.TestRandomChanceAccessors",
+		"condition.TestRandomChanceWithLootingAccessors",
+		"entry.TestLootEntryAccessors",
+		"entry.TestLootEntryItemAccessors",
+		"entry.TestLootEntryTableAccessors",
+		"function.TestEnchantRandomlyAccessors",
+		"function.TestEnchantWithLevelsAccessors",
+		"function.TestLootingEnchantBonusAccessors",
+		"function.TestSetCountAccessors",
+		"function.TestSetDamageAccessors",
+		"function.TestSetMetadataAccessors",
+		"function.TestSetNBTAccessors"
+	],
+	"injectors": {
+	 	"defaultRequire": 1
+	},
+	"refmap": "mixins.zenloot.refmap.json"
+ }
