@@ -1,4 +1,4 @@
-loot.tables.editTable("zenloot_test:foo", function(table, context) {
+loot.tables.editTable("loot_carpenter_test:foo", function(table, context) {
 	val bar = table.getPool("bar");
 	//addConditions
 	bar.addConditions([loot.conditions.killedByPlayer()]);
@@ -8,7 +8,7 @@ loot.tables.editTable("zenloot_test:foo", function(table, context) {
 	bar.setBonusRolls(1.0, 3.0);
 });
 
-loot.tables.editTable("zenloot_test:bar", function(table, context) {
+loot.tables.editTable("loot_carpenter_test:bar", function(table, context) {
 	val baz = table.getPool("baz");
 	//removeExistingEntry
 	baz.removeEntry("qux");

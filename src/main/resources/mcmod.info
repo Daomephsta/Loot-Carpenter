@@ -1,7 +1,7 @@
 [
 {
-  "modid": "zenloot",
-  "name": "ZenLoot",
+  "modid": "loot_carpenter",
+  "name": "Loot Carpenter",
   "description": "Modify loottables via CraftTweaker's ZenScript instead of datapacks",
   "version": "${version}",
   "mcversion": "1.12.2",

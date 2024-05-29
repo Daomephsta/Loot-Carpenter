@@ -12,12 +12,12 @@ plugins {
 apply from: 'java8ify.gradle'
 
 version = "${project.modVersion}+MC${project.minecraftVersion}"
-group = "daomephsta.zenloot" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "ZenLoot"
+group = "daomephsta.loot_carpenter" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "LootCarpenter"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
-ext.MIXIN_LOADER_CLASS = 'daomephsta.zenloot.MixinLoader'
+ext.MIXIN_LOADER_CLASS = 'daomephsta.loot_carpenter.MixinLoader'
 
 def mixins(runConfig) {
     runConfig.jvmArg "-Dfml.coreMods.load=$MIXIN_LOADER_CLASS"
@@ -29,7 +29,7 @@ minecraft {
 
     runs {
         client {
-            taskName "$archivesBaseName Client"
+            taskName "$archivesBaseName-Client"
             workingDirectory project.file('run/client')
             mixins(it)
             property 'forge.logging.markers', 'REGISTRIES'
@@ -39,7 +39,7 @@ minecraft {
         }
 
         server {
-            taskName "$archivesBaseName Server"
+            taskName "$archivesBaseName-Server"
             mixins(it)
             workingDirectory project.file('run/server')
             property 'forge.logging.markers', 'REGISTRIES'
@@ -50,20 +50,20 @@ minecraft {
 
         testClient {
             parent runs.client
-            taskName "$archivesBaseName Client Tests"
+            taskName "$archivesBaseName-Client-Tests"
             workingDirectory project.file('test/client')
             property 'saddle.disable', 'false'
             property 'saddle.exitOnTestCompletion', 'true'
-            args '--mixin.config', 'zenloot_test.mixins.json'
+            args '--mixin.config', 'loot_carpenter_test.mixins.json'
         }
 
         testServer {
             parent runs.server
-            taskName "$archivesBaseName Server Tests"
+            taskName "$archivesBaseName-Server-Tests"
             workingDirectory project.file('test/server')
             property 'saddle.disable', 'false'
             property 'saddle.exitOnTestCompletion', 'true'
-            args '--mixin.config', 'zenloot_test.mixins.json'
+            args '--mixin.config', 'loot_carpenter_test.mixins.json'
         }
     }
 }
@@ -76,8 +76,8 @@ fancyGradle {
 }
 
 mixin {
-    add sourceSets.main, 'mixins.zenloot.refmap.json'
-    config 'zenloot.mixins.json'
+    add sourceSets.main, 'mixins.loot_carpenter.refmap.json'
+    config 'loot_carpenter.mixins.json'
 }
 
 // FancyGradle isn't quite enough
@@ -147,12 +147,12 @@ tasks.register('deploy', Copy) {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "ZenLoot",
+            "Specification-Title": "Loot Carpenter",
             "Specification-Vendor": "Daomephsta",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
-            "Implementation-Vendor": "zenloot",
+            "Implementation-Vendor": "loot_carpenter",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
             "FMLCorePlugin": MIXIN_LOADER_CLASS,
             "FMLCorePluginContainsFMLMod": "true",
@@ -175,7 +175,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 task processSource(type: Sync) {
     from sourceSets.main.java
     inputs.property 'version', project.modVersion
-    filesMatching('leviathan143/zenloot/ZenLoot.java') {
+    filesMatching('daomephsta/loot_carpenter/LootCarpenter.java') {
 		filter(ReplaceTokens, tokens: ['VERSION': project.modVersion])
 	}
     into "$buildDir/src"

@@ -1,4 +1,4 @@
-loot.tables.editTable("zenloot_test:foo", function(table, context) {
+loot.tables.editTable("loot_carpenter_test:foo", function(table, context) {
 	val bar = table.getPool("bar");
 	//addEmptyEntry
 	bar.addEmptyEntry(2, "corge_empty");

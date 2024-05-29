@@ -3,14 +3,14 @@
 	{
 		"include":
 		[
-			{"package": "daomephsta.zenloot.test.zenscript.api"}
+			{"package": "daomephsta.loot_carpenter.test.zenscript.api"}
 		]
 	},
     "init":
 	{
 		"include":
 		[
-			{"package": "daomephsta.zenloot.test"}
+			{"package": "daomephsta.loot_carpenter.test"}
 		]
 	}
 }

@@ -1,4 +1,4 @@
-loot.tables.editTable("zenloot_test:foo", function(table, context) {
+loot.tables.editTable("loot_carpenter_test:foo", function(table, context) {
 	val bar = table.getPool("bar");
 	//addItemEntry
 	bar.addItemEntry(<minecraft:apple>, 2, "qux");

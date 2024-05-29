@@ -1,5 +1,5 @@
-import zenloot.LootCondition;
-import zenloot.LootFunction;
+import mods.loot_carpenter.LootCondition;
+import mods.loot_carpenter.LootFunction;
 import crafttweaker.data.IData;
 
 // Tests Maps, booleans, and Strings

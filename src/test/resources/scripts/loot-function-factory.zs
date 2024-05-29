@@ -8,7 +8,7 @@ loot.functions.setNBT({"foo": "bar"});
 loot.functions.smelt();
 loot.functions.smelt().addConditions([loot.conditions.killedByPlayer()]);
 
-loot.tables.editTable("zenloot_test:foo", function(table, context) {
+loot.tables.editTable("loot_carpenter_test:foo", function(table, context) {
 	val bar = table.getPool("bar");
 	bar.addItemEntry(<minecraft:stick>, 1, 0,
 	[

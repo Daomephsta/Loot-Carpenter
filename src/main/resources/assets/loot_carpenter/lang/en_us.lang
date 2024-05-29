@@ -1,0 +1,32 @@
+#PARSE_ESCAPES
+loot_carpenter.commands.dump.desc=§2/ct loottables [mode] <args>\n§3Dumps the specified loottable(s)\n§3to <game directory>/dumps
+loot_carpenter.commands.dump.usage=Usage: ct loottables [mode] <args>\nModes: all | target | byName | list\nArgs: none | none | tableName | none
+loot_carpenter.commands.dump.unknownSubcommand=Unknown subcommand %s
+loot_carpenter.commands.dump.all.done=Dumped all loot tables into %s
+loot_carpenter.commands.dump.all.exception=An unexpected error occured while dumping %s. Check the game log for details.
+loot_carpenter.commands.missingName=Loot table name required!
+loot_carpenter.commands.invalidName=Invalid loot table name!
+loot_carpenter.commands.dump.target.noTable=The target does not have a loot table
+loot_carpenter.commands.dump.target.noTarget=Nothing in range
+loot_carpenter.commands.dump.target.senderNotEntity=This command can only be executed by entities
+loot_carpenter.commands.dump.dumpLink=Dumped loot table %s to %s
+loot_carpenter.commands.generate.type=Type not specified, specify chest or entity as additional argument
+loot_carpenter.commands.generate.missingEntityId=An entity ID must be specified
+loot_carpenter.commands.generate.invalidEntityId=No entity with ID %s exists
+
+loot_carpenter.messages.error.invalidTableName=No loot table with name %s exists!
+loot_carpenter.messages.error.invalidPoolName=No loot pool with name %s exists in table %s!
+loot_carpenter.messages.error.invalidEntryName=No entry with name %s exists in pool %s
+loot_carpenter.messages.error.unparseableFunctionType=%s is not an instance of IData or LootFunction!
+loot_carpenter.messages.error.unparseableConditionType=%s is not an instance of IData or LootCondition!
+loot_carpenter.messages.error.functionhelper.invalidEnchant=%s is not a valid enchantment id
+loot_carpenter.messages.error.functionhelper.damageOver100=Items cannot receive more than 100% damage!
+
+loot_carpenter.messages.info.locatingLootTables=All existing loot tables are being located. This may take a few seconds.
+
+loot_carpenter.config.warnings.category=Warnings
+loot_carpenter.config.warnings.deprecation=Deprecation
+loot_carpenter.config.warnings.newTableMinecraftNamespace=newTable() Minecraft Namespace
+loot_carpenter.config.workarounds.category=Workarounds
+loot_carpenter.config.workarounds.forceInitClasses=Classes to force initialise
+loot_carpenter.config.lastCfgVersion=Do not touch!
