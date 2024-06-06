@@ -2,8 +2,8 @@ package daomephsta.loot_carpenter.zenscript.impl.entry;
 
 import java.util.List;
 
-import daomephsta.loot_carpenter.loot.LootConditions;
-import daomephsta.loot_carpenter.mixin.LootEntryTableAccessors;
+import daomephsta.loot_shared.mixin.LootEntryTableAccessors;
+import daomephsta.loot_shared.utility.loot.LootConditions;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootEntryTable;
 import net.minecraft.world.storage.loot.conditions.LootCondition;

@@ -1,7 +1,5 @@
 package daomephsta.loot_carpenter;
 
-import crafttweaker.mc1120.commands.CTChatCommand;
-import daomephsta.loot_carpenter.command.CommandLootCarpenter;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootManager;
 import daomephsta.loot_carpenter.zenscript.api.factory.ZenLambdaLootCondition;
 import daomephsta.loot_carpenter.zenscript.api.factory.ZenLambdaLootFunction;
@@ -9,7 +7,6 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.storage.loot.conditions.LootConditionManager;
 import net.minecraft.world.storage.loot.functions.LootFunctionManager;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
@@ -32,12 +29,6 @@ public class LootCarpenter
         ZenLootManager.register(); // Entrypoint for the primary API
         LootFunctionManager.registerFunction(ZenLambdaLootFunction.SERIALISER);
         LootConditionManager.registerCondition(ZenLambdaLootCondition.SERIALISER);
-    }
-
-    @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-        CTChatCommand.registerCommand(new CommandLootCarpenter());
     }
 
     @Mod.EventHandler

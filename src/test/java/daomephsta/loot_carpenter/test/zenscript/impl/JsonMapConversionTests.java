@@ -10,8 +10,8 @@ import org.assertj.core.api.Condition;
 
 import com.google.common.collect.ImmutableMap;
 
-import daomephsta.loot_carpenter.test.support.TestUtils;
 import daomephsta.loot_carpenter.test.support.TestErrorHandler.LootCarpenterException;
+import daomephsta.loot_carpenter.test.support.TestUtils;
 import daomephsta.loot_carpenter.test.support.mixin.condition.TestEntityHasPropertyAccessors;
 import daomephsta.loot_carpenter.test.support.mixin.condition.TestEntityOnFireAccessors;
 import daomephsta.loot_carpenter.test.support.mixin.condition.TestKilledByPlayerAccessors;

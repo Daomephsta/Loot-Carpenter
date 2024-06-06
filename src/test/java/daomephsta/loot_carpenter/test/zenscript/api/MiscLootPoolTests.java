@@ -4,12 +4,12 @@ import static daomephsta.loot_carpenter.test.support.assertion.LootCarpenterAsse
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-import daomephsta.loot_carpenter.mixin.LootPoolAccessors;
-import daomephsta.loot_carpenter.test.support.TestsBase;
 import daomephsta.loot_carpenter.test.support.TestErrorHandler.LootCarpenterException;
+import daomephsta.loot_carpenter.test.support.TestsBase;
 import daomephsta.loot_carpenter.test.support.mixin.condition.TestKilledByPlayerAccessors;
 import daomephsta.loot_carpenter.zenscript.api.EditableLootPool;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootCondition;
+import daomephsta.loot_shared.mixin.LootPoolAccessors;
 import io.github.daomephsta.saddle.engine.SaddleTest;
 import io.github.daomephsta.saddle.engine.SaddleTest.LoadPhase;
 import net.minecraft.world.storage.loot.LootPool;

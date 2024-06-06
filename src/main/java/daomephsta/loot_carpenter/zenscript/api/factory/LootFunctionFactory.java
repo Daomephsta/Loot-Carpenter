@@ -6,10 +6,10 @@ import com.google.common.collect.Lists;
 
 import crafttweaker.api.data.IData;
 import crafttweaker.mc1120.data.NBTConverter;
-import daomephsta.loot_carpenter.RandomValueRanges;
-import daomephsta.loot_carpenter.loot.LootConditions;
-import daomephsta.loot_carpenter.zenscript.ErrorHandler;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootFunction;
+import daomephsta.loot_shared.ErrorHandler;
+import daomephsta.loot_shared.utility.RandomValueRanges;
+import daomephsta.loot_shared.utility.loot.LootConditions;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;

@@ -12,14 +12,14 @@ import java.util.function.Function;
 
 import javax.annotation.Nullable;
 
-import daomephsta.loot_carpenter.RandomValueRanges;
-import daomephsta.loot_carpenter.mixin.LootPoolAccessors;
-import daomephsta.loot_carpenter.mixin.LootTableAccessors;
-import daomephsta.loot_carpenter.zenscript.ErrorHandler;
 import daomephsta.loot_carpenter.zenscript.api.EditableLootPool;
 import daomephsta.loot_carpenter.zenscript.api.EditableLootTable;
 import daomephsta.loot_carpenter.zenscript.impl.MutableLootPool.QualifiedPoolIdentifier;
 import daomephsta.loot_carpenter.zenscript.impl.entry.MutableLootEntry;
+import daomephsta.loot_shared.ErrorHandler;
+import daomephsta.loot_shared.mixin.LootPoolAccessors;
+import daomephsta.loot_shared.mixin.LootTableAccessors;
+import daomephsta.loot_shared.utility.RandomValueRanges;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootEntry;
 import net.minecraft.world.storage.loot.LootPool;

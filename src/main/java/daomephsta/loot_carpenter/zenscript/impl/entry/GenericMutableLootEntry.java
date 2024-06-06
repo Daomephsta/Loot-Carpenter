@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import daomephsta.loot_carpenter.loot.LootConditions;
-import daomephsta.loot_carpenter.mixin.LootEntryAccessors;
+import daomephsta.loot_shared.mixin.LootEntryAccessors;
+import daomephsta.loot_shared.utility.loot.LootConditions;
 import net.minecraft.world.storage.loot.LootEntry;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 

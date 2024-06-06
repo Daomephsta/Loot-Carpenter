@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.minecraft.CraftTweakerMC;
-import daomephsta.loot_carpenter.mixin.LootTableAccessors;
-import daomephsta.loot_carpenter.mixin.LootTableManagerAccessors;
-import daomephsta.loot_carpenter.zenscript.ErrorHandler;
+import daomephsta.loot_shared.ErrorHandler;
+import daomephsta.loot_shared.mixin.LootTableAccessors;
+import daomephsta.loot_shared.mixin.LootTableManagerAccessors;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootPool;

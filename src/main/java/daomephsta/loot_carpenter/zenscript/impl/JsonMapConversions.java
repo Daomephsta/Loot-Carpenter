@@ -11,10 +11,11 @@ import com.google.gson.JsonSyntaxException;
 
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.data.IData;
-import daomephsta.loot_carpenter.mixin.LootTableManagerAccessors;
-import daomephsta.loot_carpenter.zenscript.ErrorHandler;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootCondition;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootFunction;
+import daomephsta.loot_shared.ErrorHandler;
+import daomephsta.loot_shared.mixin.LootTableManagerAccessors;
+import daomephsta.loot_shared.utility.JsonConverter;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraft.world.storage.loot.functions.LootFunction;
 import stanhebben.zenscript.annotations.ZenCaster;

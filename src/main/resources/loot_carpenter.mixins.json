@@ -5,22 +5,8 @@
 	"compatibilityLevel": "JAVA_8",
 	"mixins": 
 	[
-		"EntityLivingAccessors",
-		"EntityMinecartContainerMixin",
-		"LootConditionManagerAccessors",
 		"LootConditionMixin",
-		"LootEntryAccessors",
-		"LootEntryItemAccessors",
-		"LootEntryTableAccessors",
-		"LootFunctionManagerAccessors",
-		"LootFunctionMixin",
-		"LootPoolAccessors",
-		"LootPoolMixin",
-		"LootTableAccessors",
-		"LootTableManagerLoaderMixin",
-		"LootTableMixin",
-		"LootTableManagerAccessors",
-		"TileEntityLockableLootMixin"
+		"LootFunctionMixin"
 	],
 	"injectors": {
 	 	"defaultRequire": 1

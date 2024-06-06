@@ -1,6 +1,6 @@
 package daomephsta.loot_carpenter.test.support;
 
-import daomephsta.loot_carpenter.zenscript.ErrorHandler;
+import daomephsta.loot_shared.ErrorHandler;
 
 
 public class TestErrorHandler implements ErrorHandler

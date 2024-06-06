@@ -6,8 +6,8 @@ import java.util.function.Predicate;
 import org.apache.commons.lang3.ArrayUtils;
 import org.assertj.core.api.AbstractObjectAssert;
 
-import daomephsta.loot_carpenter.mixin.LootPoolAccessors;
 import daomephsta.loot_carpenter.test.support.assertion.loot.entry.LootEntryAssert;
+import daomephsta.loot_shared.mixin.LootPoolAccessors;
 import net.minecraft.world.storage.loot.LootEntry;
 import net.minecraft.world.storage.loot.LootPool;
 import net.minecraft.world.storage.loot.conditions.LootCondition;

@@ -8,9 +8,9 @@ import com.google.common.annotations.VisibleForTesting;
 import crafttweaker.CraftTweakerAPI;
 import crafttweaker.annotations.ZenRegister;
 import crafttweaker.api.data.IData;
-import daomephsta.loot_carpenter.zenscript.ErrorHandler;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootCondition;
 import daomephsta.loot_carpenter.zenscript.api.ZenLootFunction;
+import daomephsta.loot_shared.ErrorHandler;
 import stanhebben.zenscript.annotations.ZenCaster;
 import stanhebben.zenscript.annotations.ZenExpansion;
 

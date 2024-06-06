@@ -6,7 +6,6 @@ plugins {
     // See hack in settings.gradle for why this works
     id 'org.spongepowered.mixin' version '0.7.+'
     id 'eclipse'
-    id 'jacoco'
 }
 // Strip Java 9-specific info from dependencies so Forge doesn't excrete bricks
 apply from: 'java8ify.gradle'
@@ -15,7 +14,11 @@ version = "${project.modVersion}+MC${project.minecraftVersion}"
 group = "daomephsta.loot_carpenter" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "LootCarpenter"
 
-sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
 
 ext.MIXIN_LOADER_CLASS = 'daomephsta.loot_carpenter.MixinLoader'
 
@@ -120,6 +123,8 @@ dependencies
     implementation "CraftTweaker2:ZenScript:${project.crafttweakerVersion}"
     implementation fg.deobf("CraftTweaker2:CraftTweaker2-API:${project.crafttweakerVersion}")
     implementation fg.deobf("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-${project.crafttweakerVersion}")
+
+    implementation project(':Daomephsta Loot Shared')
 
     implementation "org.spongepowered:mixin:0.8.4-SNAPSHOT"
     annotationProcessor "org.spongepowered:mixin:0.8.4-SNAPSHOT:processor"

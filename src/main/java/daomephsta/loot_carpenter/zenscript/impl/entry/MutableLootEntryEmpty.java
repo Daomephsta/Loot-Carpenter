@@ -2,7 +2,7 @@ package daomephsta.loot_carpenter.zenscript.impl.entry;
 
 import java.util.List;
 
-import daomephsta.loot_carpenter.loot.LootConditions;
+import daomephsta.loot_shared.utility.loot.LootConditions;
 import net.minecraft.world.storage.loot.LootEntryEmpty;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 
