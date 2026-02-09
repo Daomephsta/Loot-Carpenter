@@ -16,9 +16,9 @@ import daomephsta.loot_carpenter.test.support.mixin.condition.TestEntityHasPrope
 import daomephsta.loot_carpenter.test.support.mixin.condition.TestEntityOnFireAccessors;
 import daomephsta.loot_carpenter.test.support.mixin.condition.TestKilledByPlayerAccessors;
 import daomephsta.loot_carpenter.test.support.mixin.function.TestSetCountAccessors;
-import daomephsta.loot_carpenter.zenscript.api.ZenLootCondition;
-import daomephsta.loot_carpenter.zenscript.api.ZenLootFunction;
-import daomephsta.loot_carpenter.zenscript.impl.JsonMapConversions;
+import daomephsta.loot_shared.zenscript.api.ZenLootCondition;
+import daomephsta.loot_shared.zenscript.api.ZenLootFunction;
+import daomephsta.loot_shared.zenscript.impl.JsonMapConversions;
 import io.github.daomephsta.saddle.engine.SaddleTest;
 import io.github.daomephsta.saddle.engine.SaddleTest.LoadPhase;
 import net.minecraft.world.storage.loot.LootContext.EntityTarget;

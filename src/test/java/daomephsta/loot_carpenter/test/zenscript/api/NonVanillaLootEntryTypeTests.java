@@ -9,7 +9,7 @@ import java.util.Random;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
 
-import daomephsta.loot_carpenter.zenscript.impl.entry.MutableLootEntry;
+import daomephsta.loot_shared.zenscript.impl.entry.MutableLootEntry;
 import io.github.daomephsta.saddle.engine.SaddleTest;
 import io.github.daomephsta.saddle.engine.SaddleTest.LoadPhase;
 import net.minecraft.item.ItemStack;

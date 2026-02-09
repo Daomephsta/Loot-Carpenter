@@ -4,7 +4,7 @@ import static daomephsta.loot_carpenter.test.support.TestUtils.iitemstack;
 import static daomephsta.loot_carpenter.test.support.assertion.LootCarpenterAssertions.assertThat;
 
 import daomephsta.loot_carpenter.test.support.TestsBase;
-import daomephsta.loot_carpenter.zenscript.api.EditableLootPool;
+import daomephsta.loot_shared.zenscript.api.EditableLootPool;
 import io.github.daomephsta.saddle.engine.SaddleTest;
 import io.github.daomephsta.saddle.engine.SaddleTest.LoadPhase;
 import net.minecraft.init.Items;

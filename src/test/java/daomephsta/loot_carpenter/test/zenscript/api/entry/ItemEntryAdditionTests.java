@@ -14,8 +14,8 @@ import daomephsta.loot_carpenter.test.support.mixin.function.TestSetCountAccesso
 import daomephsta.loot_carpenter.test.support.mixin.function.TestSetDamageAccessors;
 import daomephsta.loot_carpenter.test.support.mixin.function.TestSetMetadataAccessors;
 import daomephsta.loot_carpenter.test.support.mixin.function.TestSetNBTAccessors;
-import daomephsta.loot_carpenter.zenscript.api.ZenLootCondition;
-import daomephsta.loot_carpenter.zenscript.api.ZenLootFunction;
+import daomephsta.loot_shared.zenscript.api.ZenLootCondition;
+import daomephsta.loot_shared.zenscript.api.ZenLootFunction;
 import io.github.daomephsta.saddle.engine.SaddleTest;
 import io.github.daomephsta.saddle.engine.SaddleTest.LoadPhase;
 import net.minecraft.init.Items;

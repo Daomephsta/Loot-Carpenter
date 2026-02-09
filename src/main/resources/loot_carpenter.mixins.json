@@ -5,8 +5,6 @@
 	"compatibilityLevel": "JAVA_8",
 	"mixins": 
 	[
-		"LootConditionMixin",
-		"LootFunctionMixin"
 	],
 	"injectors": {
 	 	"defaultRequire": 1

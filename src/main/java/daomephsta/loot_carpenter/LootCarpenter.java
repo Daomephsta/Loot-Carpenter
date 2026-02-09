@@ -1,11 +1,7 @@
 package daomephsta.loot_carpenter;
 
 import daomephsta.loot_carpenter.zenscript.api.ZenLootManager;
-import daomephsta.loot_carpenter.zenscript.api.factory.ZenLambdaLootCondition;
-import daomephsta.loot_carpenter.zenscript.api.factory.ZenLambdaLootFunction;
 import net.minecraft.util.text.TextComponentTranslation;
-import net.minecraft.world.storage.loot.conditions.LootConditionManager;
-import net.minecraft.world.storage.loot.functions.LootFunctionManager;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
@@ -27,8 +23,6 @@ public class LootCarpenter
         LootCarpenterConfig.onLoad();
         LootCarpenterNetworkChecker.install();
         ZenLootManager.register(); // Entrypoint for the primary API
-        LootFunctionManager.registerFunction(ZenLambdaLootFunction.SERIALISER);
-        LootConditionManager.registerCondition(ZenLambdaLootCondition.SERIALISER);
     }
 
     @Mod.EventHandler

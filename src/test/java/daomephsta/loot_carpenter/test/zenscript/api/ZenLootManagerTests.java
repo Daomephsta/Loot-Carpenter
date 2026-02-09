@@ -4,8 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import daomephsta.loot_carpenter.test.support.TestErrorHandler.LootCarpenterException;
+import daomephsta.loot_shared.zenscript.api.EditableLootTable;
 import daomephsta.loot_carpenter.test.support.TestsBase;
-import daomephsta.loot_carpenter.zenscript.api.EditableLootTable;
 import io.github.daomephsta.saddle.engine.SaddleTest;
 import io.github.daomephsta.saddle.engine.SaddleTest.LoadPhase;
 import net.minecraft.util.ResourceLocation;
