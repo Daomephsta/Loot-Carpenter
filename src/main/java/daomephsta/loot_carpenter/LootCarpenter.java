@@ -4,7 +4,6 @@ import daomephsta.loot_carpenter.zenscript.api.ZenLootManager;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 
 @Mod(
     modid = LootCarpenter.ID, name = LootCarpenter.NAME, version = LootCarpenter.VERSION,
@@ -23,12 +22,6 @@ public class LootCarpenter
         LootCarpenterConfig.onLoad();
         LootCarpenterNetworkChecker.install();
         ZenLootManager.register(); // Entrypoint for the primary API
-    }
-
-    @Mod.EventHandler
-    public void serverStarting(FMLServerStartingEvent event)
-    {
-        ZenLootManager.INSTANCE.tables.writeGeneratedFiles(event.getServer());
     }
 
     public static TextComponentTranslation translation(String keySuffix, Object... args)
