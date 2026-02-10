@@ -42,7 +42,7 @@ public class ZenLootManager
 
     ZenLootManager(ErrorHandler errorHandler)
     {
-        this.tables = new LootTableManager(errorHandler);
+        this.tables = LootTableTweakManager.register(new LootTableManager(errorHandler));
         this.conditions = new LootConditionFactory();
         this.functions = new LootFunctionFactory(errorHandler);
         this.errorHandler = errorHandler;
