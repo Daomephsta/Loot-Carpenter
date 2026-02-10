@@ -20,11 +20,10 @@ java {
     }
 }
 
-ext.MIXIN_LOADER_CLASS = 'daomephsta.loot_carpenter.MixinLoader'
-
 def mixins(runConfig) {
-    runConfig.jvmArg "-Dfml.coreMods.load=$MIXIN_LOADER_CLASS"
     runConfig.jvmArg '-Dmixin.hotSwap=true'
+    runConfig.args '--mixin.config', 'daomephsta_loot_shared.mixins.json',
+    			   '--tweakClass', 'org.spongepowered.asm.launch.MixinTweaker'
 }
 
 minecraft {
@@ -161,10 +160,8 @@ jar {
             "Implementation-Version": "${version}",
             "Implementation-Vendor": "loot_carpenter",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-            "FMLCorePlugin": MIXIN_LOADER_CLASS,
-            "FMLCorePluginContainsFMLMod": "true",
+            "TweakClass": "org.spongepowered.asm.launch.MixinTweaker",
             "ForceLoadAsMod": true,
-            "TweakClass": "org.spongepowered.asm.launch.MixinTweaker"
         ])
     }
     finalizedBy('reobfJar')
